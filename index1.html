@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gainsboro;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 220px;
+    height: 360px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+h2 {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.price {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.perMonth {
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    opacity: 0.3;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.enterprise h2 {
+    border-bottom: 3px solid #c70640;
+}
+
+.enterprise button {
+    background-color: #c70640;
+}
+
+.enterprise button:hover {
+    background-color: #a70938; 
+}
+
+.professional h2 {
+    border-bottom: 3px solid #FF9800;
+}
+
+.professional button {
+    background-color: #FF9800;
+}
+
+.professional button:hover {
+    background-color: #F57C00;
+}
+
+.standard h2 {
+    border-bottom: 3px solid #2196F3 ;
+}
+
+.standard button {
+    background-color: #2196F3 ;
+}
+
+.standard button:hover {
+    background-color: #1976D2;
+}
+
+.basic h2 {
+    border-bottom: 3px solid #4eb911;
+}
+
+.basic button {
+    background-color: #4eb911;
+}
+
+.basic button:hover {
+    background-color: #409c0b;
+}
+
+</style>
+
+<body>
+    <div class="card enterprise">
+        <h2>ENTERPRISE</h2>
+        <div class="price">$69</div>
+        <div class="perMonth">per month</div>
+        <div>
+            <p>10GB disk space<p>
+            <p>100GB monthly bandwidth</p>
+            <p>20 email account</p>
+            <p>Unlimited subdomens</p>
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card professional">
+        <h2>PROFESSIONAL</h2>
+        <div class="price">$29</div>
+        <div class="perMonth">per month</div>
+        <div>
+            <p>5GB disk space<p>
+            <p>60GB monthly bandwidth</p>
+            <p>10 email account</p>
+            <p>Unlimited subdomens</p>
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card standard">
+        <h2>STANDARD</h2>
+        <div class="price">$19</div>
+        <div class="perMonth">per month</div>
+        <div>
+            <p>3GB disk space<p>
+            <p>30GB monthly bandwidth</p>
+            <p>5 email account</p>
+            <p>Unlimited subdomens</p>
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card basic">
+        <h2>BASIC</h2>
+        <div class="price">$9</div>
+        <div class="perMonth">per month</div>
+        <div>
+            <p>1GB disk space<p>
+            <p>10GB monthly bandwidth</p>
+            <p>2 email account</p>
+            <p>Unlimited subdomens</p>
+        </div>
+        <button>BUY</button>
+    </div>
+</body>
+</html>

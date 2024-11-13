@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            background-color: #545454;
+            color: white;
+            transition: width 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .side-menu:hover {
+            width: 200px;
+        }
+
+        .menu-header {
+            font-size: 12px;
+            padding: 20px 0;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            font-size: 13px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-item span.icon {
+            font-size: 24px;
+            margin-right: 40px;
+        }
+
+        .menu-item span.label {
+            display: none;
+        }
+
+        .side-menu:hover .menu-item span.label {
+            display: inline;
+        }
+
+        .menu-item:hover {
+            background-color: #393939;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="menu-header">MENU</div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <span class="icon">✏️</span>
+                <span class="label">EDIT</span>
+            </div>
+            <div class="menu-item">
+                <span class="icon">❤️</span>
+                <span class="label">FAVORITES</span>
+            </div>
+            <div class="menu-item">
+                <span class="icon">🕔</span>
+                <span class="label">HISTORY</span>
+            </div>
+            <div class="menu-item">
+                <span class="icon">🛡️</span>
+                <span class="label">SECURITY</span>
+            </div>
+            <div class="menu-item">
+                <span class="icon">⚙️</span>
+                <span class="label">SETTINGS</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-left: 70px; padding: 20px;">
+        <h1>Lorem ipsum </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut repellendus alias sunt ratione laborum laudantium, repudiandae libero, veniam tenetur perferendis totam doloremque enim soluta cumque, culpa illum nihil fugit?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut commodi quaerat doloremque rem numquam fuga sapiente accusantium! Adipisci, dolores iste. Aliquid tempora earum doloribus eligendi quo fugit eveniet quis?</p>
+    
+        <h1>dolor sit</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut repellendus alias sunt ratione laborum laudantium, repudiandae libero, veniam tenetur perferendis totam doloremque enim soluta cumque, culpa illum nihil fugit?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut commodi quaerat doloremque rem numquam fuga sapiente accusantium! Adipisci, dolores iste. Aliquid tempora earum doloribus eligendi quo fugit eveniet quis?</p>
+    
+        <h1>amet consectetur </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut repellendus alias sunt ratione laborum laudantium, repudiandae libero, veniam tenetur perferendis totam doloremque enim soluta cumque, culpa illum nihil fugit?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut commodi quaerat doloremque rem numquam fuga sapiente accusantium! Adipisci, dolores iste. Aliquid tempora earum doloribus eligendi quo fugit eveniet quis?</p>
+    </div>
+
+    
+
+</body>
+</html>
